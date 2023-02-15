@@ -14,17 +14,39 @@
         <!-- TODO: Set Action and Method Properties -->
         <div>
           <label for="firstname">Your First Name</label>
-          <input type="text" id="firstname" name="firstname" />
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            minlength="2"
+            maxlength="35"
+            required
+          />
+          <span class="required-field">*</span>
           <!-- TODO: Create a "lastname" input with type "text" -->
           <label for="lastname">Your Last Name</label>
-          <input type="text" id="lastname" name="lastname" />
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            minlength="2"
+            maxlength="35"
+            required
+          />
+          <span class="required-field">*</span>
+
+          <!--Add Age-->
+          <label for="age">Your Age</label>
+          <input type="number" name="age" id="age" min="21" max="120" />
+          <h5>You must be age 21 or older to enter the contest.</h5>
         </div>
         <!-- TODO: Make fieldset and legend -->
         <fieldset>
           <legend>Your Contact Info</legend>
           <!-- Todo: Email Input -->
           <label for="email"> Your Email </label>
-          <input type="text" id="email" name="email" />
+          <input type="text" id="email" name="email" required />
+          <span class="required-field">*</span>
           <!-- Todo: Street Address Input -->
           <label for="address"> Your Street Address</label>
           <input type="text" id="address" name="address" />
@@ -86,7 +108,7 @@
           </select>
 
           <label for="zipcode">Your Zipcode</label>
-          <input type="text" id="zipcode" name="zipcode" />
+          <input type="number" id="zipcode" name="zipcode" />
         </fieldset>
 
         <!-- TODO: Second fieldset -->
